@@ -1,57 +1,62 @@
 ![GenI-banner](https://github.com/genilab-fau/genilab-fau.github.io/blob/8d6ab41403b853a273983e4c06a7e52229f43df5/images/genilab-banner.png?raw=true)
 
-# {title of your research project}
+# **Research Report: Multi-Level Prompt Engineering for Chatbot Requirement Analysis**
 
-1-liner description of your project
-
-<!-- WHEN APPLICABLE, REMOVE THE COMMENT MARK AND COMPLETE
-This is a response to the Assignment part of the COURSE.
--->
-
-* Authors: [NAME1](http://www.YOURPAGE.xxx), [NAME_n](http://www.YOURPAGE.xxx)
+* Authors: Anudeep Reddy Raavi, Akhila Manthena, Suresh Puchagatla.
 * Academic Supervisor: [Dr. Fernando Koch](http://www.fernandokoch.me)
 
-  
-# Research Question 
+# Research Question
 
-1-liner description of your request (or exploration).. Make it enthusiastically!
+Can **Automatic Prompt Engineering (APE)** and **ReAct (Reasoning + Acting)** improve chatbot requirement analysis, and which performs best under varying model configurations?
 
 ## Arguments
 
 #### What is already known about this topic
 
-* you could do {something} to achieve {some result}
-* the challenges of {doing something}
-* the possibility of {doing something else}
-* ...
+* Prompt Engineering significantly impacts  AI-generated responses .
+* Automatic Prompt Engineering (APE) allows AI to  generate its own prompts , removing human bias.
+* ReAct (Reasoning + Acting) iteratively breaks down problems before generating responses, leading to  better-structured outputs .
+* Different model parameters (temperature, context, max predictions) can alter response  coherence, creativity, and precision .
 
 #### What this research is exploring
 
-<!-- Free-format; use the topics that are applicable to your exploration  -->
-
-* we employ {some technique}
-* we are building {something}
-* we are exploring {some idea or technology}
+* We employ APE and ReAct to  generate chatbot requirement analysis .
+* We compare their performance using  execution time, response length, and content quality .
+* We test variations in temperature, context size, and prediction length to analyze effectiveness.
 
 #### Implications for practice
 
-<!-- Free-format; use the topics that are applicable to your exploration  -->
-
-* it will be easier to {do something}
-* it will optimize {some process}
-* we will better understand {some process}
-* ...
+* It will optimize the process of requirement analysis generation for chatbot projects.
+* It will provide insights into which  prompting technique is best suited for structured AI-generated reports .
+* It enables automation in prompt optimization, reducing the need for manual intervention.
 
 # Research Method
 
-Describe how you are building this research process.
-
-<!-- WHEN APPLICABLE AND AVAILABLE -->
+* **Multi-Level Prompt Engineering Setup**
+  * **Step 1**: Generate  structured prompts using APE .
+  * **Step 2**: Generate  iterative responses using ReAct .
+  * **Step 3**: Execute  both techniques with different model configurations .
+* **Parameter Variations**
+  * **Temperature**: 0.7 (more deterministic) vs. 1.2 (more creative).
+  * **Context Size**: 500 vs. 600 tokens.
+  * **Max Predictions**: 700 vs. 800 tokens.
+* **Evaluation Metrics**
+  * Execution Time (speed of response generation).
+  * Response Length (detailed vs. concise outputs).
+  * Coherence & Completeness (subjective evaluation).
 
 # Results
 
 Describe the results achieved through your research process.
 
+| **Technique** | **Configuration**               | **Execution<br /> Time** | **Response<br />Length** | **Observations**      |
+| ------------------- | ------------------------------------- | ------------------------------ | ------------------------------ | --------------------------- |
+| APE                 | Temp: 0.7, Context: 500, Predict: 700 | 15.83s                         | 3677 characters                | Structured and clear        |
+| APE                 | Temp: 1.2, Context: 600, Predict: 800 | 15.02s                         | 3551 characters               | More creative but verbose   |
+| ReAct               | Temp: 0.7, Context: 500, Predict: 700 | 12.29s                         | 2419 characters               | More detailed, step-by-step |
+| ReAct               | Temp: 1.2, Context: 600, Predict: 800 | 12.26s                         | 2222 characters                | Iterative and in-depth      |
+
 # Further research
 
-Describe what we could do next and propose new ideas for further research.
+* Testing different AI models (GPT-4, Gemini, Mixtral) for cross-model comparisons.
+* Implementing a scoring algorithm for coherence, accuracy, and completeness.
